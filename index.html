@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Ne bacaj</title>
+        <link rel="stylesheet" href="style/style.css"/>
+		<script src="scripts/jquery.js"></script>
+		<script src="scripts/script.js"></script>
+				
+				<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		
+		<!-- jQuery  for google maps -->
+					<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+	</head>
+	<body id="body_id">
+        <div id="header" >
+            	<h1>
+					NE BACAJ! 
+				</h1>
+        </div>
+		
+		
+		<div id="glIzbornik" class="btn-group btn-group-justified" role="group" aria-label="...">
+		
+		
+			<div class="btn-group" role="group">
+				<button id="btn_opcenito" type="button" class="btn btn-lg">Općenito</button>
+			</div>
+			<div class="btn-group" role="group">
+				<button id="btn_upute" type="button" class="btn btn-lg">Upute i savjeti</button>
+			</div>
+			<div class="btn-group" role="group">
+				<button id="btn_dogadjanja" type="button" class="btn btn-lg">Događanja</button>
+			</div>
+			<div class="btn-group" role="group">
+				<button id="btn_stvari" type="button" class="btn btn-lg">Popis stvari</button>
+			</div>
+			<div class="btn-group" role="group">
+				<button id="btn_lokacije" type="button" class="btn btn-lg">Lokacije</button>
+			</div>
+		</div>
+		
+		
+		<!-- Opcenito -->
+		<div id="mainDiv">
+			<ul id="toggle-view">
+				<li>
+				
+					<h3>Informacije o otpadu</h3>
+					<span>+</span>
+					<div class="panel">
+							<div class="media-left">
+								<div class="col-xs-6 col-md-3">
+									<a href="#">
+									  <img class="media-object" src="images/otpad.jpg" alt="...">
+									</a>
+								</div>
+							  </div>
+							  <div class="media-right">
+								<p>Otpad je svaka tvar koju posjednik odbacuje, namjerava odbaciti ili mora odbaciti (Zakon o otpadu).  Gospodarski rast i rastuća potrošnja materijala rezultirajustalnim povećanjem, količine otpada što predstavlja jedan od najvećih problema zaštite okoliša koji izravno utječe na ljudsko zdravlje i kvalitetu života.	</p>
+							  </div>  
+					</div>
+				</li>
+				<li>
+					<h3>Opasni otpad</h3>
+					<span>+</span>
+					<div class="panel">
+						<div class="media-left">
+								<div class="col-xs-6 col-md-3">
+									<a href="#">
+									  <img class="media-object" src="images/opasni_otpad.jpg" alt="...">
+									</a>
+								</div>
+							  </div>
+							  <div class="media-body">
+								<p>Opasni otpad je otpad koji sadrži barem jedno od 14 svojstava, a to su: eksplozivnost, reaktivnost, nadražljivost, štetnost, toksičnost, kancerogenost, infektivnost, zapaljivost, korozivnost, mutogenost, teratogenost, ukoliko sadrži tvari koje ispuštaju toksične plinove u kontaktu sa vodom, zrakom i kiselinom; ukoliko sadrži ekotoksične tvari.</p>
+							  </div>
+					</div>
+				</li>
+				
+				<li>
+					<h3>Razgradivi otpad</h3>
+					<span>+</span>
+					<div class="panel">
+						<div class="media-left">
+								<div class="col-xs-6 col-md-3">
+									<a href="#">
+									  <img class="media-object" src="images/razgradivi_otpad.jpg" alt="...">
+									</a>
+								</div>
+							  </div>
+							  <div class="media-body">
+								<p>Razgradivi otpad je sav onaj otpad koji se može razgraditi.</p>
+							  </div>
+					</div>
+				</li>
+				
+				<li>
+				
+					<h3>Problem odlaganja otpada</h3>
+					<span>+</span>
+					<div class="panel">
+							<div class="media-left">
+								<div class="col-xs-6 col-md-3">
+									<a href="#">
+									  <img class="media-object" src="images/problem_otpada.jpg" alt="...">
+									</a>
+								</div>
+							  </div>
+							  <div class="media-body">
+								<p>Deponija (odlagalište smeća, smetlište) predstavlja mjesto za odlaganje otpadnih materijala, obično tako što se otpad skuplja na jednu lokaciju i zatrpava (najstariji način odlaganja otpada).
+								Na nekim deponijama vrši se selekcija i reciklira otpad. U današnje vrijeme vrši se kategorizacija otpada prema tipu otpada koji se na njima odlaže. Potom se izdvajaju one kategorije otpada koje se mogu reciklirati, a ostatak se zatrpava na deponiji.
+								Deponije mogu biti moderno osmišljene i pripremljene tako da se iskorištavaju tekući nusprodukti ili plin koji se stvara  unutar samog odlagališta, putem raspadanja organskog otpada. Suvremene deponije generalno imaju minimalno jedan pokrovni sloj, koji se sastoji od nabijene gline sa minimalnom potrebnom debljinom za maksimalnu hidrauličnu prepreku.
+								Na većim deponijama postoje mašine za sabijanje otpada koje se koriste kako bi uštedile prostor. Kada se deponija ili jedan njen dio ispuni otpadom uglavnom se zatrpava slojem zemlje.		
+							</div>
+					</div>
+				</li>
+				
+			</ul>
+			
+		</div>
+		
+		
+		<!-- Upute i savjeti-->
+		<div id="uputeDiv" >
+			
+			<div class="dropdown" id="dropdownDiv">
+			  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				Odaberi kategoriju otpada
+				<span class="caret"></span>
+			  </button>
+	
+			  <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+				<li><a href="#">Papir</a></li>
+				<li><a href="#">Metal</a></li>
+				<li><a href="#">Plastika</a></li>
+				<li><a href="#">Staklo</a></li>
+				<li role="separator" class="divider"></li>
+				<li><a href="#">Opće upute</a></li>
+			  </ul>
+			</div>
+			
+			<br></br>
+			<br></br>
+		
+			<ul id="toggle-view">
+				<li id="li_uputa">
+					<h3>Upute za razvstavanje otpada</h3>
+					<span>+</span>
+					<div class="panel">
+						<div style="max-height:300px;overflow:scroll;overflow-x:hidden;overflow-y:scroll;">
+						<p style="">
+						<ul id="ul_upute">
+							<!--uputa br 1-->
+							
+							<div id="ul_upute_div">Uputa br.1. Otpad razvrstavamo prema vrsti materijala. Ambalažu od različitih proizvoda potrebno je očistiti od ostataka sadržaja. U spremnike za papir, metal, plastiku i staklo u pravilu ne odlažemo opasne ili zapaljive tvari, odnosno ambalažu s ostatcima istih.</div>
+							  
+							  <br></br>
+							  
+							  <div id="ul_upute_div">Uputa br.2. U plavu kantu ili spremnik s oznakom PAPIR odlažemo papir i karton. Pod ovim pojmovima podrazumijevamo sljedeće: Novine, časopisi, reklamni letci, prospekti, katalozi, kalendari, knjige s papirnatim ili kartonskim koricama, bilježnice, notesi (bez spiralnog uveza)
+uredski papir, papirnate omotnice, pisma, kartonski fascikli,ćiste papirnate vrećice,Karton i kartonska ambalaža (spljoštena i u manjim komadima), kartonska ambalaža za jaja,tetrapak ambalaža (prije odlaganja, tetrapak je potrebno spljoštiti, isprati i ukloniti plastični poklopac)</div>
+							  <br></br>
+							  <div id="ul_upute_div">Uputa br.3. U kantu ili spremnik s oznakom MET (obično sive boje) odlažemo metalni otpad. Pod ovim pojmom podrazumijevamo sljedeće: limenke, konzerve, metalni čepovi i poklopci (ambalaža treba biti isprana i, ako je to moguće, spljoštena),aluminijska folija.  </div>
+							<br></br>
+							  
+							<div id="ul_upute_div">Uputa br.4. Glomazni otpad odlažimo u vrijeme i na mjesto organiziranog odvoza. Posebno odvojimo metalni otpad i auto–gume od ostalog otpada te ih odložimo na mjesto dostupno vozilima Čistoće. </div>
+							<br></br>
+							<div id="ul_upute_div">Uputa br.5. U kantu ili spremnik s oznakom MET NE odlažemo sljedeće: metalna ambalaža s ostacima boje,lakova ili drugih zapaljivih tvari;metalna ambalaža od deodoranata i drugih sprejeva pod tlakom</div>
+							<br></br>
+							<div id="ul_upute_div">Uputa br.6. Kontrolirano izdvajajte svaki otpad, ne stvarajte divlja odlagališta.</div>
+							<br></br>
+							<div id="ul_upute_div">Uputa br.7.  </div>
+							<br></br>
+							<div id="ul_upute_div">Uputa br.8. </div>
+							<br></br>
+						</ul>
+						</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<h3>Praktični savjeti</h3>
+					<span>+</span>
+					<div class="panel">
+						<div style="max-height:300px;overflow:scroll;overflow-x:hidden;overflow-y:scroll;">
+						<p style="">
+						<ul id="ul_upute">
+							<div id="ul_upute_div">Savjet br.1.Kupovati samo proizvode koji su nam neophodni. Prije odlaska u kupovinu napravite listu. </div><br></br>
+							<div id="ul_upute_div">Savjet br.2. Pazite kako se parkirate. Ostavite mjesta za druge i ne parkirajte ispred spremnika  za otpad.
+							</div><br></br>
+							<div id="ul_upute_div">Savjet br.3. Nositi svoju torbu u kupovinu,i to ne samo kada se ide u nabavu hrane, već stalno, tako će se izbjeći gomilanje plastičnih vrećica loše kvalitete i slabe izdržljivosti, koje ubrzo nakon upotrebe postaju u stvari otpad, i nepravilno odlaganjem zagađuju naše rijeke i okolinu.</div><br></br>
+							<div id="ul_upute_div">Savjet br.4. Kupovati sredstva za održavanje osobne higijene i higijene domaćinstva u pakiranjima koja se mogu dopuniti. Na taj način se izbjegava kupovina nove ambalaže svaki put, a i ekonomičnije je za kućni budžet. Također preporuća se kupovanje većih pakovanja ovih sredstava, koja će nam duže trajati.</div><br></br>
+							<div id="ul_upute_div">Savjet br.5. Kupovati svježe namirnice koje zahtijevaju manje ambalaže od vakumiranih pakiranja </div><br></br>
+							<div id="ul_upute_div">Savjet br.6. Kupujmo pića u povratnim bocama </div><br></br>
+							<div id="ul_upute_div">Savjet br.7. Kupujmo reciklirane proizvode </div><br></br>
+							<div id="ul_upute_div">Savjet br.8. Na slavinu stavite mrežicu za reguliranje mlaza.</div><br></br>
+							
+						</ul>
+						</p>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+					<h3>Video materijal</h3>
+					<span>+</span>
+					<div class="panel">
+						<div style="max-height:300px;overflow:scroll;overflow-x:hidden;overflow-y:scroll;">
+						<p style="">
+						<ul id="ul_upute">
+							<div id="ul_upute_div">
+								<div class="media">
+								  <div class="media-left">
+									<a href="https://www.youtube.com/watch?v=4F0fPBM0V1s">
+									  <img class="media-object" src="images/plasticBag.jpg">
+									</a>
+								  </div>
+								  <div class="media-body">
+									Video br.1. Recikliranje plasticnih vrecica
+								  </div>
+								</div>
+							
+							</div><br></br>
+							<div id="ul_upute_div">
+								<div class="media">
+								  <div class="media-left">
+									<a href="https://www.youtube.com/watch?v=VLFw1x6MqQw">
+									  <img class="media-object" src="images/vozilaRec.png">
+									</a>
+								  </div>
+								  <div class="media-body">
+									Video br.2. Recikliranje vozila
+								  </div>
+								</div>		
+							</div><br></br>
+							<div id="ul_upute_div">
+								<div class="media">
+								  <div class="media-left">
+									<a href="https://www.youtube.com/watch?v=9WJskp5zP1Q">
+									  <img class="media-object" src="images/eeRec.png">
+									</a>
+								  </div>
+								  <div class="media-body">
+									Video br.3. Recikliranje EE opreme
+								  </div>
+								</div>		
+							</div><br></br>
+							<div id="ul_upute_div">Video br.4. </div><br></br>
+							<div id="ul_upute_div">Video br.5. </div><br></br>
+							<div id="ul_upute_div">Video br.6. </div><br></br>
+							<div id="ul_upute_div">Video br.7. </div><br></br>
+							<div id="ul_upute_div">Video br.8. </div><br></br>
+						</ul>
+						</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+				
+		<!-- Događanja-->
+		<div id="dogadjanjaDiv" >
+			
+			<div class="dropdown" id="dropdownDiv">
+			  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				Odaberi kategoriju dogadjanja
+				<span class="caret"></span>
+			  </button>
+	
+			  <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+				<li><a href="#">Krupni komunalni otpad</a></li>
+				<li><a href="#">Lijekovi</a></li>
+				<li><a href="#">Ambalažni otpad</a></li>
+				<li><a href="#">Papir</a></li>
+				<li><a href="#">Metal</a></li>
+			  </ul>
+			</div>
+			
+			<br></br>
+			<br></br>
+		
+			<nav class="navbar navbar-default" style="margin-bottom:0px;">
+			  <div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <a class="navbar-brand" href="#">Događanja</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				  <ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Poredaj po <span class="caret"></span></a>
+					  <ul class="dropdown-menu">
+						<li><a href="#">Lokaciji</a></li>
+						<li><a href="#">Datumu - od najskorijeg prema najdaljem </a></li>
+						<li><a href="#">Datumu - od najdaljeg prema najskorijem</a></li>
+						<li><a href="#">Broju sudionika</a></li>
+					  </ul>
+					</li>
+				  </ul>
+				</div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+			
+			<div style="background-color: white;max-height:300px;overflow:scroll;overflow-x:hidden;overflow-y:scroll;">
+				<p style="background-color:white;">
+			
+					<ul id="toggle-view">
+						<li id="dogadaj_li">
+							<h3>Događaj br.1 - Sakupljanje i odvoz krupnog komunalnog otpada - Omiš - 21.10.2016</h3>
+							<span>+</span>
+							<div class="panel">
+								<div class="media-left">
+									<div class="col-xs-2 col-md-1">
+										<a href="#">
+										<img class="media-object" src="images/krupni_otpad.jpg" alt="...">
+										</a>
+									</div>
+								  </div>
+								  <div class="media-body">
+									<h5 class="media-heading">Tema: Sakupljanje i odvoz krupnog	 komunalnog otpada</h5>
+									<h5 class="media-heading">Lokacija: Omiš,pored ulaza u tunel</h5>
+									<h5 class="media-heading">Datum: 21.10.2016- 24.10.2016</h5>
+									<h5 class="media-heading">Vrijeme: 08:00-16:00</h5>
+									<h5 class="media-heading">Broj prijavljenih sudionika: 256</h5>	
+									<button type="button" class="btn btn-default">Prijavi dolazak na događaj</button>
+								</div>							
+							</div>	
+						</li>
+						
+						<li id="dogadaj_li">
+							<h3>Događaj br.2 - Sakupljanje ambalažnog otpada sredstava za zaštitu bilja - Valpovo - 21.04.2016</h3>
+							<span>+</span>
+							<div class="panel">
+								<div class="media-left">
+									<div class="col-xs-2 col-md-1">
+										<a href="#">
+										<img class="media-object" src="images/zastitabilja_otpad.jpg" alt="...">
+										</a>
+									</div>
+								  </div>
+								  <div class="media-body">
+									<h5 class="media-heading">Tema: Sakupljanje ambalažnog otpada sredstava za zaštitu bilja</h5>
+									<h5 class="media-heading">Lokacija: grad Valpovo</h5>
+									<h5 class="media-heading">Datum: 21.04.2016 - 24.04.2016</h5>
+									<h5 class="media-heading">Vrijeme: 08:00 - 16:00</h5>
+									<h5 class="media-heading">Broj prijavljenih sudionika: 256</h5>
+									<button type="button" class="btn btn-default">Prijavi dolazak na događaj</button>
+								</div>							
+							</div>
+						</li>
+						
+						<li id="dogadaj_li">
+							<h3>Događaj br.3 - Akcija sakupljanja elektroničkog otpada - Zadar - 19.03.2016</h3>
+							<span>+</span>
+							<div class="panel">
+								<div class="media-left">
+									<div class="col-xs-2 col-md-1">
+										<a href="#">
+										<img class="media-object" src="images/sorry_otpad.jpg" alt="...">
+										</a>
+									</div>
+								  </div>
+								  <div class="media-body">
+									<h5 class="media-heading">Tema: sakupljanja elektroničkog otpada  </h5>
+									<h5 class="media-heading">Lokacija: Zadar </h5>
+									<h5 class="media-heading">Datum: 19.03.2016.</h5>
+									<h5 class="media-heading">Vrijeme: 08:00 - 20:15</h5>
+									<h5 class="media-heading">Broj prijavljenih sudionika: </h5>
+									<button type="button" class="btn btn-default">Prijavi dolazak na događaj</button>
+								</div>							
+							</div>
+						</li>
+						
+						<li id="dogadaj_li">
+							<h3>Događaj br.4 Akcija organiziranog sakupljanje papira - Šibenik - 11.02.2016 </h3>
+							<span>+</span>
+							<div class="panel">
+								<div class="media-left">
+									<div class="col-xs-2 col-md-1">
+										<a href="#">
+										<img class="media-object" src="images/sorry_otpad.jpg" alt="...">
+										</a>
+									</div>
+								  </div>
+								  <div class="media-body">
+									<h5 class="media-heading">Tema: Organizirano sakupljanje papira</h5>
+									<h5 class="media-heading">Lokacija: Šibenik </h5>
+									<h5 class="media-heading">Datum: 11.02.2016 </h5>
+									<h5 class="media-heading">Vrijeme: Cijeli dan </h5>
+									<h5 class="media-heading">Broj prijavljenih sudionika: </h5>
+									<button type="button" class="btn btn-default">Prijavi dolazak na događaj</button>
+								</div>							
+							</div>
+						</li>
+						
+						<li id="dogadaj_li">
+							<h3>Događaj br.5 Akcija sakupljanja otpadnih plastičnih čepova i poklopaca - Koprivnica - 15.12.2016. </h3>
+							<span>+</span>
+							<div class="panel">
+								<div class="media-left">
+									<div class="col-xs-2 col-md-1">
+										<a href="#">
+										<img class="media-object" src="images/sorry_otpad.jpg" alt="...">
+										</a>
+									</div>
+								  </div>
+								  <div class="media-body">
+									<h5 class="media-heading">Tema: Sakupljanje otpadnih plastičnih čepova i poklopaca </h5>
+									<h5 class="media-heading">Lokacija: Koprivnica </h5>
+									<h5 class="media-heading">Datum: 15.12.2016. </h5>
+									<h5 class="media-heading">Vrijeme: 08:00 - 16:00 </h5>
+									<h5 class="media-heading">Broj prijavljenih sudionika: </h5>
+									<button type="button" class="btn btn-default">Prijavi dolazak na događaj</button>
+								</div>							
+							</div>
+						</li> 	
+						
+						
+					</ul>
+				
+				</p>
+			</div>
+			
+			<div class="form-actions">
+				<button type="button" class="btn btn-lg btn-primary" id="btn_novodogadjanje">Kreiraj novo događanje</button>
+				<button type="button" class="btn btn-lg btn-primary" id="btn_kalendar">Pogledaj kalendar događanja</button>
+			</div>		
+		</div>
+		
+		<!--KalendarDiv-->
+			<div class="container" id="calendar"></div>
+		
+		<!--Događanja input-->
+		<div id="dogadjanjaInputDiv">
+			<h4 class="well">Unos novog dogadjanja</h4>
+			<div class="col-lg-12 well">
+			<div class="row" id="unosDiv">
+				<form>
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label>Naziv</label>
+							<input type="text" required value="" placeholder="Upiši naziv.."  class="form-control"></input>
+						</div>
+						<div class="form-group">
+							<label>Tema</label>
+							<input required value="" placeholder="Upiši temu dogadjanja.." class="form-control"></input>
+						</div>							
+						<div class="form-group">
+							<label>Adresa</label>
+							<input required value="" placeholder="Upiši adresu.."  class="form-control"></input>
+						</div>	
+						<div class="form-group">
+							<label>Lokacija</label>
+							<input required value="" placeholder="Upiši lokaciju.." class="form-control"></input>
+						</div>
+						<div class="form-group">
+							<label>Vrijeme</label>
+							<input required value="" placeholder="Upiši vrijeme.." class="form-control"></input>
+						</div>
+						<div class="form-group">
+							<label>Url slike</label>
+							<input type="url" placeholder="zalijepi url.." class="form-control"></input>
+						</div>
+						
+						<div class="form-group">
+							<label>Opis</label>
+							<textarea placeholder="Upiši opis.." rows="3" class="form-control"></textarea>
+						</div>
+						
+						<div class="form-group">
+							<label>Kategorija</label>
+							<div class="form-group">
+								<label class="radio-inline"><input type="radio" name="optradio">Krupni komunalni otpad</label>
+								<label class="radio-inline"><input type="radio" name="optradio">Lijekovi</label>
+								<label class="radio-inline"><input type="radio" name="optradio">Ambalažni otpad</label>
+								<label class="radio-inline"><input type="radio" name="optradio">Papir</label>
+								<label class="radio-inline"><input type="radio" name="optradio">Metal</label>
+							</div>
+						</div>
+						
+						<div class="form-actions">
+							<button type="submit" class="btn btn-lg btn-success">Dodaj</button>
+							<button type="button" class="btn btn-lg btn-danger" id="btnDogadjanjeOdustani">Odustani</button>	
+						</div>					
+					</div>
+				</form> 
+				</div>
+			</div>
+		</div>
+		
+		
+		<!--Popis stvari-->
+		<div id="stvariDiv">
+			
+			<div class="dropdown" id="dropdownDiv">
+			  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				Odaberi kategoriju stvari
+				<span class="caret"></span>
+			  </button>
+	
+			  <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+				<li><a href="#">Kućanski namještaj</a></li>
+				<li><a href="#">Lijekovi</a></li>
+				<li><a href="#">Sanitarije</a></li>
+				<li><a href="#">Prozori i vrata</a></li>
+				<li><a href="#">Elektronski uređaji</a></li>
+			  </ul>
+			</div>
+			
+			<br></br>
+			<br></br>
+			
+			<nav class="navbar navbar-default" style="margin-bottom:0px;">
+			  <div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <a class="navbar-brand" href="#">Stvari</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				  <ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Poredaj po <span class="caret"></span></a>
+					  <ul class="dropdown-menu">
+						<li><a href="#">Lokaciji</a></li>
+						<li><a href="#">Datumu objave - od najnovijeg prema najstarijem </a></li>
+						<li><a href="#">Datumu objave - od najstarijeg prema najnovijem</a></li>
+						<li><a href="#">Po popularnosti</a></li>
+					  </ul>
+					</li>
+				  </ul>
+				</div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+			
+			<div style="background-color:white;max-height:300px;overflow:scroll;overflow-x:hidden;overflow-y:scroll;">
+				<p style="">
+			
+					<ul id="toggle-view">
+						<li id="dogadaj_li">
+							<h3>Stvar br.1 - Ormar </h3>
+							<span>+</span>
+							<div class="panel">
+								<div class="media-left">
+									<div class="col-xs-2 col-md-1">
+										<a href="#">
+										<img class="media-object" src="images/ormar.jpg" alt="...">
+										</a>
+									</div>
+								  </div>
+								  <div class="media-body">
+									<h5 class="media-heading">Naziv: Ormar </h5>
+									<h5 class="media-heading">Dimenzije: 300 x 216 x 68</h5>
+									<h5 class="media-heading">Lokacija: Split</h5>
+									<h5 class="media-heading">Adresa: Ilica 1000</h5>	
+									<h5 class="media-heading">Kontakt: 090/999-9999</h5>	
+								</div>							
+							</div>	
+						</li>
+						
+						<li id="dogadaj_li">
+							<h3>Stvar br.2 - Prozor </h3>
+							<span>+</span>
+							<div class="panel">
+								<div class="media-left">
+									<div class="col-xs-2 col-md-1">
+										<a href="#">
+										<img class="media-object" src="images/jednokrilni_prozor.jpg" alt="...">
+										</a>
+									</div>
+								  </div>
+								  <div class="media-body">
+									<h5 class="media-heading">Naziv: Prozor </h5>
+									<h5 class="media-heading">Dimenzije: 100 x 20 x 150</h5>
+									<h5 class="media-heading">Lokacija: Zagreb</h5>
+									<h5 class="media-heading">Adresa: Domovinskog rata 1100</h5>	
+									<h5 class="media-heading">Kontakt: 090/999-9999</h5>	
+								</div>							
+							</div>
+						</li>
+						
+						<li id="dogadaj_li">
+							<h3>Stvar br.3 - Kauc </h3>
+							<span>+</span>
+							<div class="panel">
+								<div class="media-left">
+									<div class="col-xs-2 col-md-1">
+										<a href="#">
+										<img class="media-object" src="images/kauc.jpg" alt="...">
+										</a>
+									</div>
+								  </div>
+								  <div class="media-body">
+									<h5 class="media-heading">Naziv: Kauc </h5>
+									<h5 class="media-heading">Dimenzije: 230 x 95 x 85 </h5>
+									<h5 class="media-heading">Lokacija: Zagreb </h5>
+									<h5 class="media-heading">Adresa: Put junaka 67 </h5>	
+									<h5 class="media-heading">Kontakt: 090/999-9999</h5>	
+								</div>							
+							</div>
+						</li>
+						
+						<li id="dogadaj_li">
+							<h3>Stvar br.4 - Stolić</h3>
+							<span>+</span>
+							<div class="panel">
+								<div class="media-left">
+									<div class="col-xs-2 col-md-1">
+										<a href="#">
+										<img class="media-object" src="images/stolic.jpg" alt="...">
+										</a>
+									</div>
+								  </div>
+								  <div class="media-body">
+									<h5 class="media-heading">Naziv: Stolić</h5>
+									<h5 class="media-heading">Dimenzije: 90 x 60 x 40</h5>
+									<h5 class="media-heading">Lokacija: Pula </h5>
+									<h5 class="media-heading">Adresa: Forum 500 </h5>	
+									<h5 class="media-heading">Kontakt: 090/999-9999</h5>	
+								</div>							
+							</div>
+						</li>
+						
+						<li id="dogadaj_li">
+							<h3>Stvar br.5 - Walkman </h3>
+							<span>+</span>
+							<div class="panel">
+								<div class="media-left">
+									<div class="col-xs-2 col-md-1">
+										<a href="#">
+										<img class="media-object" src="images/walkman.jpg" alt="...">
+										</a>
+									</div>
+								  </div>
+								  <div class="media-body">
+									<h5 class="media-heading">Naziv: Walkman</h5>
+									<h5 class="media-heading">Dimenzije: 79×109.2x29mm </h5>
+									<h5 class="media-heading">Lokacija: Zadar </h5>
+									<h5 class="media-heading">Adresa: </h5>	
+									<h5 class="media-heading">Kontakt: 090/999-9999</h5>	
+								</div>							
+							</div>
+						</li>
+						
+						
+					</ul>
+				
+				</p>
+			</div>
+			
+			<div class="form-actions">
+				<button type="button" class="btn btn-lg btn-primary" id="btn_novastvar">Dodaj novu stvar</button>
+							
+			</div>		
+		</div>
+		
+		<!--Stvari input-->
+		<div id="stvarInputDiv">
+			<h4 class="well">Unos nove stvari</h4>
+			<div class="col-lg-12 well">
+			<div class="row" id="unosDiv">
+				<form>
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label>Naziv</label>
+							<input type="text" required value="" placeholder="Upiši naziv.."  class="form-control"></input>
+						</div>
+						<div class="form-group">
+							<label>Dimenzije</label>
+							<input required value="" placeholder="Upiši dimenzije.." class="form-control"></input>
+						</div>							
+						<div class="form-group">
+							<label>Adresa</label>
+							<input required value="" placeholder="Upiši adresu.."  class="form-control"></input>
+						</div>	
+						<div class="form-group">
+							<label>Lokacija</label>
+							<input required value="" placeholder="Upiši lokaciju.." class="form-control"></input>
+						</div>
+						<div class="form-group">
+							<label>Kontakt</label>
+							<input type="number" required value="" placeholder="Upiši kontakt.." class="form-control"></input>
+						</div>
+						<div class="form-group">
+							<label>Url slike</label>
+							<input type="url" placeholder="zalijepi url.." class="form-control"></input>
+						</div>
+						
+						<div class="form-group">
+							<label>Opis</label>
+							<textarea placeholder="Upiši opis.." rows="3" class="form-control"></textarea>
+						</div>
+						
+						<div class="form-group">
+							<label>Kategorija</label>
+							<div class="form-group">
+								<label class="radio-inline"><input type="radio" name="optradio">Kućanski namještaj</label>
+								<label class="radio-inline"><input type="radio" name="optradio">Lijekovi</label>
+								<label class="radio-inline"><input type="radio" name="optradio">Sanitarije</label>
+								<label class="radio-inline"><input type="radio" name="optradio">Prozori i vrata</label>
+								<label class="radio-inline"><input type="radio" name="optradio">Elektronski uređaji</label>
+							</div>
+						</div>
+						
+						<div class="form-actions">
+							<button type="submit" class="btn btn-lg btn-success">Dodaj</button>
+							<button type="button" class="btn btn-lg btn-danger" id="btnOdustani">Odustani</button>	
+						</div>					
+					</div>
+				</form> 
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		<!--Lokacije odlagališta-->
+		<div id="lokacijeDiv">
+			<div class="dropdown" id="dropdownDiv">
+			  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				Odaberi kategoriju odlagališta
+				<span class="caret"></span>
+			  </button>
+	
+			  <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+				<li><a href="#">Ambalažni otpad</a></li>
+				<li><a href="#">Otpadna motorna ulja</a></li>
+				<li><a href="#">Otpadne gume</a></li>
+				<li><a href="#">Elektronski i elektronički otpad</a></li>
+				<li><a href="#">Medicinski otpad</a></li>
+			  </ul>
+			</div>
+			
+			<br></br>
+			<br></br>
+		
+			<nav class="navbar navbar-default" style="margin-bottom:0px;">
+			  <div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <a class="navbar-brand" href="#">Odlagališta</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				  <ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Poredaj po <span class="caret"></span></a>
+					  <ul class="dropdown-menu">
+						<li><a href="#">Abecedi</a></li>
+						<li><a href="#">Po popularnosti</a></li>
+					  </ul>
+					</li>
+				  </ul>
+				</div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+			
+			
+			<div style="background-color:white;max-height:300px;overflow:scroll;overflow-x:hidden;overflow-y:scroll;">
+				<p style="">
+					<ul id="toggle-view">
+						<li id="dogadaj_li">
+							<h3>Odlagalište br.1 - Jakuševac - Zagreb </h3>
+							<span>+</span>
+							<div class="panel">
+								<div class="media-left">
+									<div class="col-xs-2 col-md-1">
+										<a href="#">
+										<img class="media-object" src="images/jakusevec.jpg" alt="...">
+										</a>
+									</div>
+								  </div>
+								  <div class="media-body">
+									<h5 class="media-heading">Naziv: Jakuševac  </h5>
+									<h5 class="media-heading">Vrste otpada: sve </h5>
+									<h5 class="media-heading">Lokacija: Zagreb </h5>
+									<h5 class="media-heading">Adresa: Sajmišna Cesta 8</h5>
+									<h5 class="media-heading">Radno vrijeme: 08:00 - 20:00 </h5>								
+								</div>							
+							</div>	
+						</li>
+						
+						<li id="dogadaj_li">
+							<h3>Odlagalište br.2 - Karepovac - Split </h3>
+							<span>+</span>
+							<div class="panel">
+								<div class="media-left">
+									<div class="col-xs-2 col-md-1">
+										<a href="#">
+										<img class="media-object" src="images/karepovac.jpg" alt="...">
+										</a>
+									</div>
+								  </div>
+								  <div class="media-body">
+									<h5 class="media-heading">Naziv: Karepovac </h5>
+									<h5 class="media-heading">Vrste otpada: sve </h5>
+									<h5 class="media-heading">Lokacija: Split</h5>
+									<h5 class="media-heading">Adresa: Put plokita 81</h5>
+									<h5 class="media-heading">Radno vrijeme: 06:00-16:00 </h5>									
+								</div>							
+							</div>
+						</li>
+						
+						<li id="dogadaj_li">
+							<h3>Odlagalište br.3 - Mariščina - Rijeka </h3>
+							<span>+</span>
+							<div class="panel">
+								<div class="media-left">
+									<div class="col-xs-2 col-md-1">
+										<a href="#">
+										<img class="media-object" src="images/sorry_otpad.jpg" alt="...">
+										</a>
+									</div>
+								  </div>
+								  <div class="media-body">
+									<h5 class="media-heading">Naziv: Mariščina </h5>
+									<h5 class="media-heading">Vrste otpada: sve </h5>
+									<h5 class="media-heading">Lokacija: Rijeka </h5>
+									<h5 class="media-heading">Adresa: Kružna ul. 8 </h5>
+									<h5 class="media-heading">Radno vrijeme: / </h5>									
+								</div>							
+							</div>
+						</li>
+						
+						<li id="dogadaj_li">
+							<h3>Odlagalište br.4 - Sirovina - Zadar </h3>
+							<span>+</span>
+							<div class="panel">
+								<div class="media-left">
+									<div class="col-xs-2 col-md-1">
+										<a href="#">
+										<img class="media-object" src="images/sorry_otpad.jpg" alt="...">
+										</a>
+									</div>
+								  </div>
+								  <div class="media-body">
+									<h5 class="media-heading">Naziv: Sirovina </h5>
+									<h5 class="media-heading">Vrste otpada: Recikliranje metalnih i nemetalnih ostataka</h5>
+									<h5 class="media-heading">Lokacija:  Zadar </h5>
+									<h5 class="media-heading">Adresa: Ul. Ive Dulčića 6 </h5>
+									<h5 class="media-heading">Radno vrijeme: /</h5>									
+								</div>							
+							</div>
+						</li>
+						<li id="dogadaj_li">
+							<h3>Odlagalište br.5 - Gradska Čistoća - Šibenik </h3>
+							<span>+</span>
+							<div class="panel">
+								<div class="media-left">
+									<div class="col-xs-2 col-md-1">
+										<a href="#">
+										<img class="media-object" src="images/sorry_otpad.jpg" alt="...">
+										</a>
+									</div>
+								  </div>
+								  <div class="media-body">
+									<h5 class="media-heading">Naziv: Gradska Čistoća </h5>
+									<h5 class="media-heading">Vrste otpada: sve </h5>
+									<h5 class="media-heading">Lokacija: Šibenik </h5>
+									<h5 class="media-heading">Adresa: Ul. Stjepana Radića 100 </h5>
+									<h5 class="media-heading">Radno vrijeme: / </h5>									
+								</div>							
+							</div>
+						</li>
+						<li id="dogadaj_li">
+							<h3>Odlagalište br.6 - Lončarica - Velika(kraj Osijeka) </h3>
+							<span>+</span>
+							<div class="panel">
+								<div class="media-left">
+									<div class="col-xs-2 col-md-1">
+										<a href="#">
+										<img class="media-object" src="images/sorry_otpad.jpg" alt="...">
+										</a>
+									</div>
+								  </div>
+								  <div class="media-body">
+									<h5 class="media-heading">Naziv: Lončarica</h5>
+									<h5 class="media-heading">Vrste otpada: sve </h5>
+									<h5 class="media-heading">Lokacija: Velika </h5>
+									<h5 class="media-heading">Adresa: /</h5>
+									<h5 class="media-heading">Radno vrijeme: /</h5>									
+								</div>							
+							</div>
+						</li>
+						<li id="dogadaj_li">
+							<h3>Odlagalište br.7 - Kaštijun - Pula </h3>
+							<span>+</span>
+							<div class="panel">
+								<div class="media-left">
+									<div class="col-xs-2 col-md-1">
+										<a href="#">
+										<img class="media-object" src="images/sorry_otpad.jpg" alt="...">
+										</a>
+									</div>
+								  </div>
+								  <div class="media-body">
+									<h5 class="media-heading">Naziv: Kaštijun </h5>
+									<h5 class="media-heading">Vrste otpada: sve </h5>
+									<h5 class="media-heading">Lokacija: Pula </h5>
+									<h5 class="media-heading">Adresa: Forum 1 </h5>
+									<h5 class="media-heading">Radno vrijeme: /</h5>		
+								</div>							
+							</div>
+						</li>
+						
+					</ul>
+				
+				</p>
+			</div>
+			<div class="form-actions">
+				<button type="button" class="btn btn-lg btn-primary" id="btn_mapaOdlagalista">Otvori mapu odlagališta</button>
+			</div>
+		
+		</div>
+		
+		
+		<!--Map Div-->
+		<div id="mapDiv">
+			<h4 class="well">Mapa odlagališta</h4>
+			<div id="map-container" ></div>
+				<div class="container">
+				 
+				 </div><!-- /container -->
+					<script>	
+				 
+					  function init_map() {
+						var var_locationSplit = new google.maps.LatLng(43.5169254,16.4481363);
+						var var_locationZagreb = new google.maps.LatLng(45.7716451,16.0111242);
+						var var_locationRijeka = new google.maps.LatLng(45.3280949,14.4372718);
+						var var_locationZadar = new google.maps.LatLng(44.1078135,15.2636242);
+						var var_locationŠibenik = new google.maps.LatLng(43.7185409,15.9151213);
+						var var_locationVelika = new google.maps.LatLng(45.5314,18.6857);
+						var var_locationPula = new google.maps.LatLng(44.8702428,13.8399443);
+						
+						var var_mapoptions = {
+						  center: var_locationZadar,
+						  zoom: 7
+						};
+				 
+						var var_markerSplit = new google.maps.Marker({
+							position: var_locationSplit,
+							map: var_map,
+							title:"Karepovac"});
+					
+						var var_markerZagreb = new google.maps.Marker({
+							position: var_locationZagreb,
+							map: var_map,
+							title:"Jakuševac"});
+					
+						var var_markerRijeka = new google.maps.Marker({
+							position: var_locationRijeka,
+							map: var_map,
+							title:"Mariščina"});
+						
+						var var_markerZadar = new google.maps.Marker({
+							position: var_locationZadar,
+							map: var_map,
+							title:"Sirovina"});
+						
+						var var_markerŠibenik = new google.maps.Marker({
+							position: var_locationŠibenik,
+							map: var_map,
+							title:"Gradska čistoća"});
+				 
+						var var_markerVelika = new google.maps.Marker({
+							position: var_locationVelika,
+							map: var_map,
+							title:"Lončarica"});
+						
+						var var_markerPula = new google.maps.Marker({
+							position: var_locationPula,
+							map: var_map,
+							title:"Kaštijun"});
+						
+						var var_map = new google.maps.Map(document.getElementById("map-container"),
+							var_mapoptions);
+				 
+						var_markerSplit.setMap(var_map);	
+						var_markerZagreb.setMap(var_map);	
+						var_markerRijeka.setMap(var_map);
+						var_markerZadar.setMap(var_map);	
+						var_markerŠibenik.setMap(var_map);
+						var_markerVelika.setMap(var_map);
+						var_markerPula.setMap(var_map);
+					  }
+				 
+					  google.maps.event.addDomListener(window, 'load', init_map);
+				 
+					</script>
+			
+			</div>
+	</body>
+</html>
